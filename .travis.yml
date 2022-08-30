@@ -8,7 +8,7 @@ before_install:
 
 
 script:
-  - docker run farhanhameed010/react-test npm test -- --coveragae
+  - docker run -e CI=true farhanhameed010/react-test npm run test -- --coveragae
 
 
 after_success:
