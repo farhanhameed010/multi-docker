@@ -1,4 +1,5 @@
 sudo: required
+language: generic
 services: 
   - docker  
 
@@ -22,6 +23,6 @@ after_success:
 
 # Take those images and push them to docker hub
 - docker push farhanhameed010/multi-client 
-  - docker push-t farhanhameed010/multi-nginx 
-  - docker push -t farhanhameed010/multi-server 
-  - docker push -t farhanhameed010/multi-worker 
+- docker push farhanhameed010/multi-nginx 
+- docker push farhanhameed010/multi-server 
+- docker push farhanhameed010/multi-worker 
